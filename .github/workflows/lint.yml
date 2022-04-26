@@ -1,4 +1,4 @@
-name: .NET - Build
+name: .NET - Lint
 
 on: [pull_request]
 
@@ -14,4 +14,5 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet }}
           include-prerelease: true
-      - run: dotnet build src
+      - run: dotnet format src --verify-no-changes
+      - run: dotnet format tests --verify-no-changes
