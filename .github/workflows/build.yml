@@ -1,4 +1,4 @@
-name: Dotnet - Build
+name: .NET - Build
 
 on: [pull_request]
 

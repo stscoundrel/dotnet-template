@@ -1,4 +1,4 @@
-name: Dotnet - Lint
+name: .NET - Lint
 
 on: [pull_request]
 
